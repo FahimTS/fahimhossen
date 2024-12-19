@@ -1,0 +1,337 @@
+/* =================== Mobile Responsive ================== */
+@media screen and (max-width: 767.99px) {
+  section {
+    padding: 65px 0px !important;
+  }
+  #navbarSupportedContent {
+    background: var(--white);
+    position: absolute;
+    width: 93%;
+    top: 70px;
+    left: -43%;
+    /*   text-align: center; */
+    transform: translate(50%);
+    padding: 10px 0px 10px;
+    border-radius: 6px;
+    z-index: 9999;
+  }
+  #navbarSupportedContent ul li:hover {
+    background: var(--primaryColor);
+  }
+  #navbarSupportedContent ul li:hover a {
+    color: var(--white);
+  }
+  #navbarSupportedContent {
+    transition: 0.3s;
+  }
+  #navbarSupportedContent ul li a {
+    padding-left: 15px;
+    font-size: 15px;
+  }
+  .navbar-nav.mx-auto.gap-4 {
+    gap: 5px !important;
+  }
+  #navbarSupportedContent button {
+    display: none;
+  }
+  /* header start */
+  .social_media {
+    display: none !important;
+  }
+  .hero_part {
+    padding: 0px;
+  }
+  .hero_content h2 {
+    text-align: center;
+    font-size: 18px;
+  }
+  .hero_content h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+  .hero_content p {
+    font-size: 15px;
+    text-align: center;
+    /* width: 310px !important; */
+    margin: auto;
+    margin-top: 15px;
+  }
+  .hero_content button {
+    margin: 0px auto;
+    text-align: center;
+    display: flex;
+  }
+  .hero_image {
+    margin-top: 50px !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+  /* header end */
+
+  .sec_title span {
+    width: 15% !important;
+  }
+
+  .about_title h2 {
+    font-size: 23px !important;
+    margin-top: 40px;
+  }
+  .about_inner {
+    margin-top: 75px !important;
+  }
+  .about_title span {
+    width: 20% !important;
+  }
+  .about_content p {
+    font-size: 15px !important;
+    margin: 25px 0px !important;
+  }
+  .about_image {
+    margin: 35px auto !important;
+  }
+
+  .about_content.about_me_content {
+    margin: 0px !important;
+  }
+  .about_title span {
+    display: none !important;
+  }
+  .sec_title h3 {
+    font-size: 30px !important;
+  }
+  .services_item {
+    margin-bottom: 61px !important;
+    margin-top: 19px !important;
+    height: auto !important;
+    margin-bottom: 55px !important;
+    margin-top: -20px !important;
+  }
+  .working_process {
+    margin-top: -35px !important;
+  }
+  .work_item {
+    margin-bottom: 30px !important;
+  }
+  .workExp_item {
+    margin-bottom: 30px !important;
+  }
+  .workExp_inner_two {
+    margin-top: 0px !important;
+  }
+  .stay_item {
+    margin-bottom: 30px !important;
+  }
+  .footer_item a {
+    margin: 20px auto !important;
+  }
+  .divider {
+    margin-top: 40px !important;
+  }
+  /* Contact Page responsive */
+
+  .contact_item {
+    margin-bottom: 30px;
+  }
+  .col-md-7.contact_wd {
+    display: block !important;
+  }
+  .form_feild.d-flex.justify-content-between.animate__animated.animate__fadeInUp {
+    display: block !important;
+  }
+  .fname input,
+  .lname input {
+    width: 100% !important;
+  }
+  .lname {
+    margin-top: 25px;
+  }
+  .contact_content {
+    margin-top: 33px !important;
+    margin-left: 20px !important;
+  }
+  
+.contact_content p {
+  margin: 20px 0px !important;
+}
+  .contact_social_icon.d-flex.justify-content-start.align-items-center.animate__animated.animate__fadeInUp {
+    display: none !important;
+  }
+  .get_it_touch {
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+
+  .social_media_icon ul.d-flex.justify-content-start.align-items-center {
+    margin: auto;
+    text-align: center;
+    width: 100%;
+  }
+
+  .contact_overlay {
+    padding: 20px !important;
+  }
+  .social_media_icon.d-flex.justify-content-start.align-items-center {
+    display: flex !important;
+    align-content: center;
+    justify-content: center !important;
+  }
+  .footer_item.d-flex.align-items-end.justify-content-end {
+    justify-content: center !important;
+    align-content: center !important;
+    display: flex !important;
+  }
+  /* ===============About Page Responsive ================= */
+  .about_us_me {
+    padding: 0px !important;
+  }
+
+  .about_content.about_me_content {
+    margin: auto;
+    text-align: center;
+  }
+  .progress_bar {
+    padding: 30px 0 !important;
+  }
+  .development_part {
+    padding: 0px !important;
+  }
+  .developer_content {
+    margin-top: 30px !important;
+  }
+  .exp_content p {
+    font-size: 14px;
+  }
+  .stay_in_touch {
+    padding-top: 45px !important;
+    margin-top: 45px;
+  }
+  .about_inner {
+    margin: 0px !important;
+  }
+  
+  /* ===============About Page Responsive ================= */
+}
+/* =================== Tab Responsive ================== */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  /* ==== Navbar start ==== */
+  section {
+    padding: 65px 0px !important;
+  }
+  #navbarSupportedContent {
+    background: var(--white);
+    position: absolute;
+    width: 93%;
+    top: 70px;
+    left: -43%;
+    /*   text-align: center; */
+    transform: translate(50%);
+    padding: 10px 0px 10px;
+    border-radius: 6px;
+  }
+  #navbarSupportedContent ul li:hover {
+    background: var(--primaryColor);
+  }
+  #navbarSupportedContent ul li:hover a {
+    color: var(--white);
+  }
+  #navbarSupportedContent {
+    transition: 0.3s;
+  }
+  #navbarSupportedContent ul li a {
+    padding-left: 15px;
+    font-size: 15px;
+  }
+  .navbar-nav.mx-auto.gap-4 {
+    gap: 5px !important;
+  }
+  #navbarSupportedContent button {
+    display: none;
+  }
+  /* ==== Navbar end ==== */
+  /* ==== Header start ====  */
+
+  .hero_sec {
+    margin-left: -90px;
+  }
+  .hero_content p {
+    width: 100% !important;
+  }
+
+  .social_media {
+    display: none;
+  }
+
+  /* .hero_image img {
+padding-right: 66px;
+width: 334px;
+} */
+  .hero_image {
+    margin-top: 40px;
+  }
+  .hero_content h2 {
+    font-size: 18px;
+  }
+  .hero_content h1 {
+    font-size: 43px;
+  }
+  .col-md-7 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .about_inner {
+    width: 100% !important;
+  }
+  .col-md-7 {
+    width: 50% !important;
+  }
+  .col-md-5 {
+    width: 50%;
+  }
+  .services_wd {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .work_item h2 {
+    font-size: 20px !important;
+  }
+  .work_item p {
+    font-size: 14px !important;
+  }
+  .workExp_item {
+    height: 350px;
+  }
+  .contact_wd {
+    width: 100% !important;
+  }
+  .cnt_top {
+    margin-top: 30px;
+  }
+  .get_it_touch {
+    margin-bottom: 0px !important;
+  }
+
+  .fname input,
+  .lname input {
+    width: 295px !important;
+  }
+}
+/* ========= Laptop Area Responsive ============ */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .contact_item h2 {
+    font-size: 17px;
+  }
+  .form_feild input {
+    display: block !important;
+  }
+  .fname input,
+  .lname input {
+    width: 100% !important;
+  }
+  .form_feild.d-flex.justify-content-between.animate__animated.animate__fadeInUp {
+    display: block !important;
+  }
+  .lname {
+    margin-top: 25px;
+  }
+}

@@ -1,0 +1,148 @@
+.header {
+  background-image: url(../image/hero2-bg.jpg) !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+nav.navbar {
+  background-color: transparent;
+}
+
+.about_me {
+  background-color: transparent;
+}
+.contact_me {
+  background-image: url(../image/shape1-horiz1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 150px 0px 90px;
+}
+.contact_item {
+  background-color: #fff;
+  padding: 40px 30px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 45px 0px #f0ebeb;
+}
+
+.contact_icon i {
+  font-size: 33px;
+  color: #1b9c85;
+}
+.get_it_touch {
+  padding: 0;
+  margin-bottom: 100px;
+}
+.about_title h2 {
+  font-weight: 600 !important;
+}
+.contact_overlay {
+  width: 100%;
+  padding: 45px;
+  background: white;
+  box-shadow: 0px 0px 45px 0px
+    rgba(213, 191.23695652173913, 191.23695652173913, 0.5);
+  border-radius: 8px;
+}
+
+.contact_form {
+  margin-top: 45px;
+  width: 100%;
+}
+
+.form_feild input {
+  width: 100%;
+  padding: 7px;
+  background: #ecedf070;
+  border: 1px solid #d4d6da;
+  border-radius: 2px;
+  outline: none;
+}
+
+.lname input {
+  width: 100%;
+}
+
+.form_feild {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.fname input {
+  width: 270px;
+}
+
+.lname input {
+  width: 270px;
+}
+
+.msg textarea {
+  width: 100%;
+  background: #f7f7f8;
+}
+
+div#submit_btn button {
+  width: 100%;
+  margin-top: 20px;
+}
+.fname p,
+.lname p,
+.email p,
+.msg p {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+.msg textarea {
+  outline: none;
+  background: #ecedf070;
+  border: 1px solid #d4d6da;
+  padding: 8px;
+}
+.contact_content p {
+  width: 300px;
+  font-size: 18px;
+}
+
+.contact_social_icon ul li {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  border: 2px solid #f8b90c;
+  transition: 0.3s;
+}
+.contact_social_icon ul {
+  margin-top: 15px;
+  padding: 0;
+}
+.contact_social_icon ul li {
+  border-color: #f8b90c;
+}
+
+.contact_social_icon ul li i {
+  color: #f8b90c;
+}
+.contact_content {
+  margin-left: 35px;
+}
+.form_feild input.error {
+  border-color: rgb(235, 51, 73) !important;
+}
+
+.form_feild textarea.error {
+  border-color: rgb(235, 51, 73) !important;
+}
+.form_feild .error_txt {
+  display: none;
+  color: var(--primaryColor);
+  font-size: 13px;
+  text-align: left;
+  margin-top: 5px;
+  margin-left: 15px;
+}
+
+.form_feild.error .error_txt {
+  display: block;
+}
