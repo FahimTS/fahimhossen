@@ -53,10 +53,25 @@
 .develop_progress_bar ul li:before {
   content: "";
   position: absolute;
-  width: 90%;
+  width: 96%;
   height: 25px;
   background: #1b9c85;
   border-bottom-left-radius: 80px;
+}
+.develop_progress_bar ul li:nth-child(2):before {
+  width: 90%;
+}
+
+.develop_progress_bar ul li:nth-child(4):before {
+  width: 88%;
+}
+
+.develop_progress_bar ul li:nth-child(3):before {
+  width: 85%;
+}
+
+.develop_progress_bar ul li:last-child:before {
+  width: 89%;
 }
 .left span {
   color: var(--white);
