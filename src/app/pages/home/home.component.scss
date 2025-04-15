@@ -1,0 +1,51 @@
+.service{
+    background-color: #1A192D;
+    background-image: url(../../../assets/img/shape1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0px 80px;
+    .service_inner{
+        margin-top: 85px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
+
+}
+
+.work-process{
+    background-color: #1C1A2E;
+    padding: 0;
+    .sec_title{
+        h3{
+            color: var(--white) !important;
+        }
+    }
+    .work_inner{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 25px;
+        margin-top: 80px;
+    }
+}
+
+// work exprience start
+
+.portfolio{
+    background-color: #1C1A2E;
+    padding: 140px 0px 80px;
+}
+.portfolio_inner {
+    margin-top: 100px !important;
+}
+
+.portfolio_flex {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+}
+
+// work exprience end
+
+
+

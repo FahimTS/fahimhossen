@@ -1,0 +1,42 @@
+.header{
+    background: var(--bgColor);
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    // padding: 20px 0;
+    transition: all 0.3s ease;
+    z-index: 999;
+    }
+    a.navbar-brand img {
+        width: 125px;
+    }
+    
+    ul.navbar-nav li a {
+        color: #fff;
+        font-weight: 600;
+        font-size: 16px;
+        &:hover {
+            color: #716FFF !important;
+        }
+    }
+    .scrolled-nav {
+      position: fixed;
+      background-color: #202337; // তোমার background
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      color: #fff;  
+    .navbar{
+        transition: all 0.3s ease;
+        a.navbar-brand img {
+            width: 125px;
+        }
+        ul.navbar-nav li.nav-item a {
+            color: #fff !important;
+            font-weight: 600;
+            font-size: 16px;
+        }
+        ul.navbar-nav li a:hover {
+            color: #716FFF !important;
+        }
+    }
+}

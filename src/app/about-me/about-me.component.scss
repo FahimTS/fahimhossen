@@ -1,0 +1,168 @@
+.about_me{
+  background-color: var(--bgColor);
+  padding: 40px 0px 60px;
+  
+  .container{
+      .about_inner{
+          margin-top: 100px;
+      }
+
+      }
+      
+      .about_title  {
+          h2{
+          font-size: 22px;
+          color: rgb(238, 238, 238) !important;
+          }
+      }
+      
+      .about_descrip {
+          p {
+              color: #c5c3d1 !important;
+              font-size: 15px;
+          }
+      }
+      
+      .about_info {
+          position: relative;
+          ul li {
+              border-top: 1px dashed rgb(73 67 129);
+              padding-top: 14px;
+              padding-bottom: 14px;
+          }
+          ul li b {
+              // margin-right: 55px !important;
+              position: absolute;
+              left: 90px;
+          }
+          
+          ul li span {
+              color: rgb(238, 238, 238);
+              font-size: 16px;
+              font-weight: 600;
+          }
+          ul li small {
+              color: #c5c3d1;
+              position: absolute;
+              left: 115px;
+              font-size: 15px;
+          }
+      }
+      .ms_box{
+          margin-bottom: 30px;
+          padding: 20px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          background: #202337;
+          border-radius: 15px;
+          -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+          position: relative;
+          overflow: hidden;
+          ::before{
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            content: "";
+            width: 150px;
+            height: 150px;
+            background-color: rgba(255, 255, 255, 0.03);
+            position: absolute;
+            top: -38%;
+            right: -15%;
+            border-radius: 50%;
+            transition: 0.3s;
+          }
+          ::after{
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            content: "";
+            width: 150px;
+            height: 150px;
+            background-color: rgba(255, 255, 255, 0.03);
+            position: absolute;
+            top: -15%;
+            right: -32%;
+            border-radius: 50%;
+            transition: 0.3s;
+          }
+          h2 {
+            font-size: 22px;
+            color: #fff !important;
+        }
+        
+        p {
+            color: #c5c3d1 !important;
+            text-align: center;
+            font-size: 14px;
+        }
+      }
+      .progress, .progress-stacked{
+          background: transparent;
+          font-size: 18px;
+      }
+      .progress {
+          width: 100px;
+          height: 90px;
+
+          .track,
+          .fill {
+            fill: none;
+            stroke-width: 8;
+            // transform: rotate(90deg) translate(0px, -80px);
+          }
+        
+          .track {
+            stroke: rgb(56, 71, 83);
+          }
+        
+          .fill {
+            stroke: white;
+            stroke-dasharray:  219.99078369140625;
+            stroke-dashoffset: -219.99078369140625;
+            transition: stroke-dashoffset 0.3s ease;
+          }
+        
+          path.fill.green.htmlValue-fill {
+            stroke: #FF6F91!important;
+        }
+        
+         path.fill.green.cssValue-fill {
+                stroke: #716FFF!important;
+            }
+
+            path.fill.green.jsValue-fill {
+              stroke: #716FFF!important;
+          }
+
+          path.fill.green.phpValue-fill {
+            stroke: #716FFF!important;
+        }
+
+          .value {
+            font-family: 'Open Sans';
+            fill: white;
+            font-size: 16px;
+            text-anchor: middle;
+            dominant-baseline: middle;
+          }
+        }
+        
+        .noselect {
+          user-select: none;
+          cursor: default;
+        }
+        
+              
+}
+

@@ -1,0 +1,83 @@
+// stay in touch start
+.stay_in_touch{
+    background-color: #1C1A2E;
+    .sec_title{
+        p{
+            color: var(--white);
+        }
+    }
+    .contact_inner {
+        width: 760px;
+        margin: auto;
+        background: repeating-radial-gradient(#0000002e, transparent 100px);
+        padding: 20px 45px;
+        border-radius: 20px;
+        margin-top: 90px;
+    }
+    
+    .form_fleid label {
+        color: #fff;
+    }
+    
+    .form_fleid textarea {
+        display: block;
+        width: 100%;
+        border-radius: 5px;
+        padding: 5px 10px;
+    }
+    
+    .contact_inner form button {
+        width: 100%;
+        margin-top: 15px;
+        background: linear-gradient(45deg, #6E6FFF, transparent);
+        border: none;
+        padding: 8px;
+    }
+    .message {
+        text-align: center;
+        margin-bottom: 15px;
+        /* font-size: ; */
+        display: none;
+        h3 {
+            font-size: 22px;
+            color: #454491 !important;
+        }
+    }
+
+}
+
+.stay_item {
+    background: #202337;
+    padding: 30px 0px 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    &::after{
+        content: "";
+        position: absolute;
+        background-image: url(../../assets/img/4tringle.png);
+        width: 100px;
+        height: 100px;
+        top: -15px;
+        right: -13px;
+        transform: rotate(248deg);
+        opacity: 0.1;
+    }
+    i {
+        color: #716FEB;
+        font-size: 35px;
+    }
+    h2 {
+        color: #fff !important;
+        font-size: 20px;
+        margin-top: 18px;
+    }    
+    p {
+        color: #fff;
+    }
+
+}
+
+// stay in touch end

@@ -1,0 +1,39 @@
+footer {
+    background: #0F172A;
+    padding: 40px 0px;
+    .copyright p {
+        color: #fff;
+        text-align: right;
+        margin: 0;
+    }
+    .social-icon {
+        ul{
+            display: flex;
+            margin: 0;
+            li{
+                width: 40px;
+                height: 40px;
+                border: 2px solid #ffffff3b;
+                border-radius: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                i{
+                    color: #fff;
+                    transition: 0.2s;
+                }
+            }
+        }
+        
+    }
+    .social-icon ul li:hover{
+        border-color: #716FEB;
+        color: #716FEB;
+    }
+    .social-icon ul li a:hover i {
+        color: #716FEB !important;
+    }
+    
+}
+
+

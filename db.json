@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "id": "8f8d",
+      "fullName": "Fahim",
+      "email": "mdfahimhossen629@gmail.com",
+      "password": "1122"
+    },
+    {
+      "id": "e458",
+      "fullName": "",
+      "email": "",
+      "password": ""
+    }
+  ]
+}

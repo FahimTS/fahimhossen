@@ -1,1 +1,83 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bgColor: #1A192D;
+    --primaryColor: #002d5b;
+    --secodaryColor: #0f172a;
+    --textColor: #454f5e;
+    --btnColor: #002d5b;
+    --textColorTwo: #e5dfdf;
+    --white: #fff;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Jost", sans-serif;
+    font-weight: 600 !important;
+    color: var(--primaryColor) !important;
+}
+
+p{
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: 16px;  
+}
+.hbtn a{
+    background-color: var(--btnColor);
+    padding: 10px 30px;
+    color: var(--white);
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    border: none;
+    transition: 0.3s;
+    text-decoration: none;
+}
+.hbtn a:hover{
+    background-color: #4e4d8d !important;
+}
+ul{
+    list-style: none;
+    padding: 0 !important;
+}
+section{
+    padding: 100px 0px;
+    overflow: hidden;
+}
+.sec_title {
+    text-align: center;
+    position: relative;
+    .light_title{
+        position: absolute;
+        top: 130%;
+        left: 0px;
+        right: 0px;
+        font-size: 125px;
+        font-weight: 700 !important;
+        color: rgb(32, 35, 55) !important;
+        line-height: 60px;
+        text-shadow: rgb(0, 0, 0) 5px -5px 10px, rgb(0, 0, 0) -1px 0px 0px, rgb(0, 0, 0) 0px 1px 0px, rgb(0, 0, 0) 0px -1px 0px, rgb(0, 0, 0) 1px 1px, rgb(0, 0, 0) -1px -1px 0px, rgb(0, 0, 0) 1px -1px 0px, rgb(0, 0, 0) -1px 1px 0px;
+        opacity: 0.14;
+        transform: translateY(-100%);
+        z-index: 1;
+        margin: auto;
+        text-transform: uppercase;
+    }
+    h3{
+        color: var(--white) !important;
+        font-size: 36px;
+        font-weight: 500 !important;
+    }
+    span{
+        width: 5%;
+        height: 3px;
+        background: #4E4FA2;
+        position: absolute;
+        transform: translateX(-50%) !important
+    }
+}

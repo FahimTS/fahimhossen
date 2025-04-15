@@ -1,0 +1,9 @@
+
+
+<ngx-slick-carousel class="portfolio-slider" [config]="slideConfig">
+  <div ngxSlickItem *ngFor="let slide of slides" class="slide-item">
+    <div class="portfolio-card">
+      <img [src]="slide.img">
+    </div>
+  </div>
+</ngx-slick-carousel>

@@ -1,0 +1,45 @@
+
+<app-hero></app-hero>
+<app-about-me></app-about-me>
+
+<section class="service" id="services">
+    <div class="container">
+        <div class="sec_title">
+            <h1 class="light_title">Achievements</h1>
+            <h3>What Services <b style="color: #5757C3;">I'm Providing</b></h3>
+            <span></span>
+        </div>
+        <div class="service_inner">
+            <app-service *ngFor="let data of services" [serviceData]="data"></app-service>
+        </div>
+    </div>
+</section>
+
+<section class="work-process">
+    <div class="container">
+        <div class="work_inner">
+            <app-work-process *ngFor="let data of works" [worksData]="data"></app-work-process>
+        </div>
+    </div>
+</section>
+
+
+<section class="portfolio" id="portfolio">
+    
+    <div class="sec_title">
+        <h1 class="light_title">Portfolio</h1>
+        <h3>My <b style="color: #5757C3;">Portfolio</b></h3>
+        <span></span>
+    </div>
+        <div class="portfolio_inner">
+            <div class="container">
+            <div class="portfolio_flex">
+                <app-portfolio-card *ngFor="let data of portfolioItem" [portfolioData]="data"></app-portfolio-card>
+            </div>
+        </div>
+            <app-portfolio></app-portfolio>
+        </div>
+
+</section>
+
+
