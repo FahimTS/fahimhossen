@@ -43,6 +43,29 @@
             color: #454491 !important;
         }
     }
+    .form-message {
+        padding: 10px 16px;
+        border-radius: 6px;
+        margin-bottom: 15px;
+        font-weight: 600;
+        font-size: 15px;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+        text-transform: capitalize;
+      }
+      
+      .msg-success {
+        background-color: #e0f8f2;
+        color: #1b9c85;
+        border: 1px solid #1b9c85;
+      }
+      
+      .msg-error {
+        background-color: #ffe2e2;
+        color: #d32f2f;
+        border: 1px solid #d32f2f;
+      }
+      
 
 }
 

@@ -4,5 +4,10 @@
 
 <router-outlet></router-outlet>
 
+<!-- Scroll to Top Button -->
+<button class="scrollTop" (click)="scrollToTop()" *ngIf="showScrollTop">
+    <i class="fa fa-arrow-up"></i>
+  </button>
+
 <app-stay-in-touch></app-stay-in-touch>
 <app-footer></app-footer>

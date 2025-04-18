@@ -1,0 +1,30 @@
+.scrollTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    background-color: #5656C0; // change this to your theme color
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 999;
+    transition: all 0.3s ease;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    &:hover {
+      background-color: #0f8a72;
+      transform: translateY(-3px);
+    }
+  
+    i {
+      font-size: 17px;
+    }
+  }
+  

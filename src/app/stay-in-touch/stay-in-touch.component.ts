@@ -21,20 +21,31 @@ export class StayInTouchComponent implements OnInit {
     });
   }
 
-  onSubmit(): void {
-    if (this.contactForm.valid) {
-      const serviceID = 'service_fux8f6t';
-      const templateID = 'template_vs87kqr';
-      const userID = 'HopAu3ctR1DKDrAVf';
+  message: string = '';
+messageType: 'success' | 'error' | '' = '';
 
-      emailjs.send(serviceID, templateID, this.contactForm.value, userID)
-        .then(() => {
-          alert('Message sent successfully!');
-          this.contactForm.reset();
-        }, (err) => {
-          alert('Failed to send message. Please try again.');
-          console.error(err);
-        });
-    }
+onSubmit(): void {
+  if (this.contactForm.valid) {
+    const serviceID = 'service_fux8f6t';
+    const templateID = 'template_vs87kqr';
+    const userID = 'HopAu3ctR1DKDrAVf';
+
+    emailjs.send(serviceID, templateID, this.contactForm.value, userID)
+      .then(() => {
+        this.message = 'Message sent successfully!';
+        this.messageType = 'success';
+        this.contactForm.reset();
+
+        setTimeout(() => {
+          this.message = '';
+          this.messageType = '';
+        }, 4000);
+      }, (err) => {
+        this.message = 'Failed to send message. Please try again.';
+        this.messageType = 'error';
+        console.error(err);
+      });
   }
+}
+
 }

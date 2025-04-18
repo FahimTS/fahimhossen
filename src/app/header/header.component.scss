@@ -40,3 +40,69 @@
         }
     }
 }
+
+
+// `md` applies to small devices (landscape phones, less than 768px)
+  
+@media (max-width: 767px) {
+    nav.navbar.navbar-expand-md {
+        padding: 0px;
+        height: 75px;
+    }
+    ul.navbar-nav.ms-auto.gap-4 {
+    gap: 4px !important;
+}
+    .navbar-toggler {
+        background: #fff !important;
+        border: none !important;
+        font-size: 16px;
+        border-radius: 3px;
+    }
+    div#navbarNav {
+        background: #202337;
+        position: absolute;
+        width: 93%;
+        top: 75px;
+        left: -43%;
+        text-align: center;
+        transform: translate(50%);
+        padding: 10px 0px 10px;
+        border-radius: 6px;
+        z-index: 9999;
+      }
+    
+    
+  }
+
+  // `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    nav.navbar.navbar-expand-md {
+        padding: 0px;
+        height: 75px;
+    }
+    ul.navbar-nav.ms-auto.gap-4 {
+        gap: 4px !important;
+    }
+    .navbar-toggler {
+        background: #fff !important;
+        border: none !important;
+        font-size: 16px;
+        border-radius: 3px;
+    }
+    div#navbarNav {
+        background: #202337;
+        position: absolute;
+        width: 93%;
+        top: 75px;
+        left: -43%;
+        text-align: center;
+        transform: translate(50%);
+        padding: 10px 0px 10px;
+        border-radius: 6px;
+        z-index: 9999;
+      }
+    
+        
+}
+ 
+

@@ -1,22 +1,37 @@
 <header [ngClass]="{ 'scrolled-nav': isScrolled }" class="header">
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-md">
     <div class="container">
-      <a class="navbar-brand" href="">
+      <a class="navbar-brand" href="#">
         <img src="../../assets/img/Logo.png" alt="logo">
       </a>
-      <div class="collapse navbar-collapse">
+
+      <!-- Toggle Button for Mobile -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapsible Menu -->
+      <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto gap-4">
           <li class="nav-item">
             <a class="nav-link" [routerLink]="['/']" fragment="home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/']" fragment="about"> About </a>
+            <a class="nav-link" [routerLink]="['/']" fragment="about">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" [routerLink]="['/']" fragment="services">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link"  [routerLink]="['/']" fragment="portfolio">Portfolio</a>
+            <a class="nav-link" [routerLink]="['/']" fragment="portfolio">Portfolio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" [routerLink]="['/']" fragment="contact">Contact</a>
