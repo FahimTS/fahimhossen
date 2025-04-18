@@ -81,3 +81,39 @@
 }
 
 // stay in touch end
+
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+
+    .contact_inner {
+        padding: 20px 20px!important;
+        width: 560px !important;
+    }
+    
+    .stay_item p {
+        font-size: 14px;
+    }
+  
+  }
+
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767px) {
+    .contact_inner {
+        width: 100% !important;
+    }
+    .stay_item {
+        margin-bottom: 40px !important;
+    }
+}
+  // `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+section#contact {
+    padding: 0px 0px !important;
+}
+.stay_touch_inner {
+    padding-left: 11px;
+    padding-right: 11px;
+}
+}

@@ -13,6 +13,31 @@
 
 }
 
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+
+    .service_inner {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+  
+  }
+// `md` applies to small devices (landscape phones, less than 768px)
+  
+@media (max-width: 767px) {
+  
+    .service_inner {
+        display: grid !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+}
+  // `sm` applies to x-small devices (portrait phones, less than 576px)
+  @media (max-width: 575.98px) { 
+    section#services {
+        padding: 5px 0px !important;
+    }
+      }
 .work-process{
     background-color: #1C1A2E;
     padding: 0;
@@ -26,8 +51,19 @@
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 25px;
         margin-top: 80px;
+        
     }
 }
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+
+    .work_inner {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+  
+  }
 
 // work exprience start
 
@@ -38,13 +74,30 @@
 .portfolio_inner {
     margin-top: 100px !important;
 }
-
+@media (max-width: 767px) {
+  
+    .portfolio_flex {
+      display: grid !important;
+      grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .portfolio_btm {
+    margin-top: 35px !important;
+}
+  }
 .portfolio_flex {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 25px;
 }
-
+@media (max-width: 575.98px) { 
+.portfolio_flex {
+    padding-left: 11px;
+    padding-right: 11px;
+}
+section#portfolio {
+    padding: 100px 0px !important;
+}
+}
 // work exprience end
 
 

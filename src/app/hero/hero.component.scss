@@ -2,6 +2,12 @@
     background-color: var(--bgColor);
     padding: 35px 0px;
     height: 515px;
+    .hero_inner .row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+    
     .social_media{
         margin-top: 128px;
         ul li{
@@ -98,6 +104,7 @@
             font-size: 46px;
             color: #716FFF !important;
         }
+
         h2{
             color: #e5dfdf !important;
             font-size: 20px;
@@ -132,3 +139,122 @@
     }
 
 }
+
+// `xl` applies to large devices (desktops, less than 1200px)
+
+@media (max-width: 1199.98px) {
+
+    .hero_content{
+        h1{
+            font-size: 36px !important;
+        }
+        p{
+            width: 430px !important;
+        }
+    }
+
+
+  }
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+    .hero_img{
+        margin-left: -55px !important;
+    }
+
+    .hero_content {
+        margin-left: -74px !important;
+    }
+    
+    .social_media {
+        display: none;
+    }
+    
+    .hero_img {
+        margin-left: -53px !important;
+        width: 296px !important;
+        height: 290px !important;
+        img {
+            width: 280px !important;
+            height: 287px !important;
+        }
+    }
+
+
+ }
+
+// `md` applies to small devices (landscape phones, less than 768px)
+  
+  @media (max-width: 767px) {
+
+    .hero_area {
+      height: unset !important;
+  }
+    .col-md-4 {
+      order: -1; // image upore
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+
+      .hero_img {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    .col-md-7 {
+      order: 2; // content niche
+      width: 100%;
+
+      .hero_content {
+        text-align: center;
+        padding: 0 15px;
+        margin-left: 0px !important;
+        p{
+            margin: 15px auto 30px !important;
+            width: 100% !important;
+        }
+      }
+    }
+
+    .col-md-1 {
+      display: none; // optional: hide social icons on small screen
+    }
+
+    .hero_img {
+        margin-left: 0px !important;
+        width: 450px !important;
+        height: 450px !important;
+        img {
+            width: 100% !important;
+            height: 100% !important;
+        }
+    }
+    
+  }
+
+  // `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+
+    .hero_img{
+        width: 296px !important;
+        height: 290px !important;
+        img{
+            width: 280px !important;
+            height: 287px !important;
+        }
+        }
+        .hero_content {
+            h1 {
+                font-size: 32px !important;
+        }
+        p {
+            font-size: 15px !important;
+        }
+        }
+        
+}
+ 

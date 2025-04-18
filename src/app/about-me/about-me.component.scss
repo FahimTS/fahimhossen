@@ -22,7 +22,21 @@
               font-size: 15px;
           }
       }
-      
+      .download_cv a{
+    background-color: var(--btnColor);
+    padding: 10px 30px;
+    color: var(--white);
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    border: none;
+    transition: 0.3s;
+    text-decoration: none;
+    &:hover{
+      background-color: #716FFF;
+    }
+      }
       .about_info {
           position: relative;
           ul li {
@@ -166,3 +180,33 @@
               
 }
 
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+
+  .row.exprCard {
+    margin-top: 55px;
+}
+
+}
+
+// `md` applies to small devices (landscape phones, less than 768px)
+  
+@media (max-width: 767px) {
+  
+      .about_me {
+        padding: 90px 0px !important;
+      }
+
+}
+
+  // `sm` applies to x-small devices (portrait phones, less than 576px)
+  @media (max-width: 575.98px) { 
+    section#about {
+      padding: 90px 0px 65px!important;
+  }
+.about_inner {
+  padding-left: 11px;
+  padding-right: 11px;
+}
+  }

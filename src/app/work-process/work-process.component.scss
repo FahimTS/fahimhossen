@@ -52,3 +52,11 @@
         }
     }
 }
+
+
+  // `sm` applies to x-small devices (portrait phones, less than 576px)
+  @media (max-width: 575.98px) { 
+.work_item {
+    padding: 20px !important;
+}
+  }
