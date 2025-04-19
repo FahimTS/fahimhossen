@@ -67,24 +67,28 @@ export class HomeComponent {
   portfolio: Portfolio = {
     img: '../../assets/img/testimonial/educavo.png',
     title: 'Website Design',
-    descrip: 'Built using HTML5, CSS3, and Bootstrap 5'
+    descrip: 'Built using HTML5, CSS3, and Bootstrap 5',
+    link: 'https://educavo20.netlify.app/'
   }
 
   portfolioItem: Portfolio[] = [
     {
       img: '../../assets/img/testimonial/educavo.png',
       title: 'Website Design',
-      descrip: 'Built using Bootstrap 5, JS and jQuery'
+      descrip: 'Built using Bootstrap 5, JS and jQuery',
+      link: 'https://educavo20.netlify.app/'
     },
     {
       img: '../../assets/img/testimonial/construck.png',
       title: 'Website Design',
-      descrip: 'Built using Bootstrap 5, JS and jQuery'
+      descrip: 'Built using Bootstrap 5, JS and jQuery',
+      link: 'https://contractor20.netlify.app'
     },
     {
       img: '../../assets/img/testimonial/medicate.png',
       title: 'Website Design',
-      descrip: 'Built using Bootstrap 5, JS and jQuery'
+      descrip: 'Built using Bootstrap 5, JS and jQuery',
+      link: 'https://pregnancy20.netlify.app'
     }
   ]
 
