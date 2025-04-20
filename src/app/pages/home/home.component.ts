@@ -79,7 +79,7 @@ export class HomeComponent {
       link: 'https://educavo20.netlify.app/'
     },
     {
-      img: '../../assets/img/testimonial/construck.png',
+      img: '../../assets/img/testimonial/construct.png',
       title: 'Website Design',
       descrip: 'Built using Bootstrap 5, JS and jQuery',
       link: 'https://contractor20.netlify.app'

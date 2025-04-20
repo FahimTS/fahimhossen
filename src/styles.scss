@@ -5,6 +5,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+body {
+    overflow-x: hidden; // horizontal scrollbar বন্ধ করতে
+}
 :root{
     --bgColor: #1A192D;
     --primaryColor: #002d5b;
