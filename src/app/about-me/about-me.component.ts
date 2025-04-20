@@ -1,4 +1,5 @@
-import { AfterViewInit, Component, ElementRef, HostListener, NgZone, ViewChild} from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import { AfterViewInit, Component, ElementRef, HostListener, Inject, NgZone, PLATFORM_ID, ViewChild} from '@angular/core';
 
 @Component({
   selector: 'app-about-me',
@@ -7,28 +8,35 @@ import { AfterViewInit, Component, ElementRef, HostListener, NgZone, ViewChild} 
 })
 export class AboutMeComponent implements AfterViewInit {
   @ViewChild('aboutSection', { static: false }) aboutSection!: ElementRef;
-  htmlValue = 0; cssValue = 0; jsValue = 0; phpValue = 0;
+  htmlValue = 0;
+  cssValue = 0;
+  jsValue = 0;
+  phpValue = 0;
   skillsAnimated = false;
 
-  constructor(private ngZone: NgZone) {}
+  constructor(
+    private ngZone: NgZone,
+    @Inject(PLATFORM_ID) private platformId: Object
+  ) {}
 
   ngAfterViewInit() {
-    const obs = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting && !this.skillsAnimated) {
-          this.startAnimation();
-          obs.unobserve(entry.target);
-        }
-      },
-      { threshold: 0.1 }
-    );
-    obs.observe(this.aboutSection.nativeElement);
+    if (isPlatformBrowser(this.platformId)) {
+      const obs = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting && !this.skillsAnimated) {
+            this.startAnimation();
+            obs.unobserve(entry.target);
+          }
+        },
+        { threshold: 0.1 }
+      );
+      obs.observe(this.aboutSection.nativeElement);
+    }
   }
 
-  // Fallback scroll listener
   @HostListener('window:scroll', [])
   onScroll() {
-    if (!this.skillsAnimated) {
+    if (!this.skillsAnimated && isPlatformBrowser(this.platformId)) {
       const rect = this.aboutSection.nativeElement.getBoundingClientRect();
       if (rect.top < window.innerHeight * 0.9) {
         this.startAnimation();
@@ -47,16 +55,26 @@ export class AboutMeComponent implements AfterViewInit {
     });
   }
 
-  animateCount(prop: 'htmlValue'|'cssValue'|'jsValue'|'phpValue', target: number, selector: string) {
+  animateCount(
+    prop: 'htmlValue' | 'cssValue' | 'jsValue' | 'phpValue',
+    target: number,
+    selector: string
+  ) {
     let count = 0;
-    const circle = this.aboutSection.nativeElement.querySelector(`.${selector}`) as SVGPathElement;
+    const circle = this.aboutSection.nativeElement.querySelector(
+      `.${selector}`
+    ) as SVGPathElement;
+
     const radius = 35;
     const circumference = 2 * Math.PI * radius;
     circle.style.strokeDasharray = `${circumference}`;
+
     const step = () => {
       if (count <= target) {
         (this as any)[prop] = count;
-        circle.style.strokeDashoffset = `${circumference - (count / 100) * circumference}`;
+        circle.style.strokeDashoffset = `${
+          circumference - (count / 100) * circumference
+        }`;
         count++;
         requestAnimationFrame(step);
       }
